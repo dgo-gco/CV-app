@@ -1,10 +1,5 @@
-
 const FormSection = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default FormSection
+export default FormSection;
