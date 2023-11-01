@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .7rem;
+    padding-bottom: .8rem;
+}
+
+.formedit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

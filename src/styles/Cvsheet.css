@@ -1,0 +1,17 @@
+.main-sheet {
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 5px 5px 8px gray;
+}
+
+.main-sec {
+    background-color: #000248;
+    color: white;
+    padding: 1rem;
+}
+
+.education-sec, .company-sec {
+    padding: 1rem;
+
+}

@@ -1,10 +1,10 @@
-import './App.css';
-import { Education } from './components/forms/Education';
+import "./App.css";
+import { Outlet } from "./components/Outlet";
 
 function App() {
   return (
     <>
-      <Education />
+      <Outlet />
     </>
   );
 }
