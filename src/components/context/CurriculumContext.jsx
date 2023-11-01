@@ -36,8 +36,8 @@ export const CurriculumContextProvider = ({ children }) => {
   };
 
   const handleSubmitPersonalData = (e) => {
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
 
   const handleSubmit = (e, info, setInfo, data, setData) => {
     e.preventDefault();
@@ -96,7 +96,7 @@ export const CurriculumContextProvider = ({ children }) => {
         submitPersonalData,
         handleEdit,
         handleEditChange,
-        handleSubmitPersonalData
+        handleSubmitPersonalData,
       }}
     >
       {children}
