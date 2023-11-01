@@ -3,7 +3,7 @@ import { EditForm } from '../EditForm';
 import { useState } from 'react';
 import '../../styles/Form.css';
 import { useCurriculumContext } from '../context/CurriculumContext';
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 
 export const EditSchoolForm = ({ onEdit, schoolData }) => {
   const [editData, setEditData] = useState(schoolData);
@@ -18,12 +18,12 @@ export const EditSchoolForm = ({ onEdit, schoolData }) => {
   return (
     <div className='accordion-item'>
       <button onClick={toggleAccordion} className='accordion-title'>
-      <div className="btn-txt">Modify {schoolData.school}</div>
-        <div className="icons">
+        <div className='btn-txt'>Modify {schoolData.school}</div>
+        <div className='icons'>
           {isOpen ? (
-            <MdKeyboardArrowUp className="icon" />
+            <MdKeyboardArrowUp className='icon' />
           ) : (
-            <MdKeyboardArrowDown className="icon" />
+            <MdKeyboardArrowDown className='icon' />
           )}
         </div>
       </button>
