@@ -5,6 +5,9 @@ import { EditCompanyForm } from './company/EditCompanyForm';
 import { CompanyForm } from './company/CompanyForm';
 import '../styles/FormsSection.css';
 import { PersonalForm } from './personal/PersonalForm';
+import {AiOutlineUser} from 'react-icons/ai'
+import {BsBuildings} from 'react-icons/bs'
+import {MdOutlineSchool} from 'react-icons/md'
 
 export const FormsSection = () => {
   const {
@@ -25,16 +28,16 @@ export const FormsSection = () => {
   } = useCurriculumContext();
   return (
     <div className='form-container'>
-      <h5>Personal Information:</h5>
       <div className='personal-forms'>
+      <h5 className='title-sec'> <AiOutlineUser /> Personal Information:</h5>
         <PersonalForm
           onChange={(e) => submitPersonalData(e, setPersonalData)}
           values={personalData}
         />
       </div>
       <div className='school-forms'>
-      <h5>Educational Information:</h5>
         <div className='inputs-box'>
+        <h5 className='title-sec'><MdOutlineSchool /> Educational Information:</h5>
           <SchoolForm
             onChange={(e) => handleOnChange(e, setSchoolData, schoolData)}
             onSubmit={(e) =>
@@ -57,8 +60,8 @@ export const FormsSection = () => {
         </div>
       </div>
       <div className='company-forms'>
-      <h5>Professional Information:</h5>
         <div className='inputs-box'>
+        <h5 className='title-sec'><BsBuildings /> Professional Information:</h5>
           <CompanyForm
             onChange={(e) => handleOnChange(e, setCompanyData, companyData)}
             onSubmit={(e) =>

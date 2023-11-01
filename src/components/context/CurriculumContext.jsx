@@ -28,13 +28,16 @@ export const CurriculumContextProvider = ({ children }) => {
   };
 
   const submitPersonalData = (e, setData) => {
-    e.preventDefault();
     const { name, value } = e.target;
     setData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
   };
+
+  const handleSubmitPersonalData = (e) => {
+    e.preventDefault()
+  }
 
   const handleSubmit = (e, info, setInfo, data, setData) => {
     e.preventDefault();
@@ -92,7 +95,8 @@ export const CurriculumContextProvider = ({ children }) => {
         handleEditSchool,
         submitPersonalData,
         handleEdit,
-        handleEditChange
+        handleEditChange,
+        handleSubmitPersonalData
       }}
     >
       {children}
