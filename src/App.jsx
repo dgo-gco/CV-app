@@ -1,5 +1,5 @@
-import "./App.css";
-import { Outlet } from "./components/Outlet";
+import './App.css';
+import { Outlet } from './components/Outlet';
 
 function App() {
   return (

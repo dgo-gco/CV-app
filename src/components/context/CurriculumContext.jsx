@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from 'react';
 
 const CurriculumContext = createContext();
 
@@ -22,7 +22,7 @@ export const CurriculumContextProvider = ({ children }) => {
   const clearObjectValues = (object) => {
     const clearedObject = {};
     for (const key in object) {
-      clearedObject[key] = "";
+      clearedObject[key] = '';
     }
     return clearedObject;
   };
@@ -61,7 +61,19 @@ export const CurriculumContextProvider = ({ children }) => {
 
     setDataToChange(updatedInfo);
   };
-  
+
+  const handleEdit = (e, edit, dataToEdit) => {
+    e.preventDefault();
+    edit(dataToEdit);
+  };
+
+  const handleEditChange = (e, setDataToEdit, dataToEdit) => {
+    const name = e.target.name;
+    const value = e.target.value;
+
+    setDataToEdit({ ...dataToEdit, [name]: value });
+  };
+
   return (
     <CurriculumContext.Provider
       value={{
@@ -79,6 +91,8 @@ export const CurriculumContextProvider = ({ children }) => {
         handleOnChange,
         handleEditSchool,
         submitPersonalData,
+        handleEdit,
+        handleEditChange
       }}
     >
       {children}

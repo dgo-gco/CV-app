@@ -1,17 +1,38 @@
 .main-sheet {
-    width: 50%;
-    height: 100vh;
-    background-color: white;
-    box-shadow: 5px 5px 8px gray;
+  width: 50%;
+  min-height: 110vh;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 5px 5px 8px gray;
 }
 
 .main-sec {
-    background-color: #000248;
-    color: white;
-    padding: 1rem;
+  background-color: #000248;
+  color: white;
+  padding: 1rem;
+  height: 140px;
 }
 
-.education-sec, .company-sec {
-    padding: 1rem;
+.sections {
+  display: flex;
+}
 
+.education-sec,
+.company-sec {
+  padding: 1rem;
+}
+
+.dates-sec {
+  font-style: italic;
+}
+
+.school-info,
+.company-info  {
+  padding-left: 1rem;
+}
+
+.school-info > p:first-of-type,
+.company-info > p:first-of-type {
+  font-weight: bold;
+  margin: 0;
 }
