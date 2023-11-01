@@ -1,7 +1,7 @@
 import { useCurriculumContext } from '../context/CurriculumContext';
-import '../../styles/CVsheet.css';
 import { BsTelephone } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
+import '../../styles/Cvsheet.css'
 
 export const CVSheet = () => {
   const { personalData, schoolsInfo, companiesInfo } = useCurriculumContext();
